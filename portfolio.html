@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio | TechVeda</title>
+    <meta
+      name="description"
+      content="Explore sample project showcase layouts for TechVeda."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html"
+          ><img src="images/techveda-logo.jpeg" alt="TechVeda logo" /><span
+            >TechVeda</span
+          ></a
+        ><button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+
+          <div class="nav-drop">
+            <a href="service.html" class="services-link">
+              Services
+            </a>
+
+            <div class="drop-menu">
+              <a href="service/app-development.html"> App Development </a>
+
+              <a href="service/web-development.html"> Web Development </a>
+
+              <a href="service/ai-solutions.html"> AI Solutions </a>
+
+              <a href="service/blockchain-development.html">
+                Blockchain Development
+              </a>
+
+              <a href="service/ui-ux-design.html"> UI/UX Design </a>
+
+              <a href="service/digital-marketing.html"> Digital Marketing </a>
+
+              <a href="service/virtual-assistant.html"> Virtual Assistant </a>
+
+              <a href="service/creative-design.html"> Creative Design </a>
+            </div>
+          </div>
+
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+
+          <a class="btn primary" href="contact.html"> Get a Quote ↗ </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Selected capabilities</span>
+          <h1>
+            Ideas made <span style="color: var(--purple)">tangible.</span>
+          </h1>
+          <p>
+            A sample portfolio layout to showcase project stories, digital
+            products and creative work. Add verified company projects before
+            publishing.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">
+              All projects</button
+            ><button class="filter-btn" data-filter="web">Web</button
+            ><button class="filter-btn" data-filter="ai">AI & Technology</button
+            ><button class="filter-btn" data-filter="design">Design</button>
+          </div>
+          <div class="cards">
+            <article class="card project-card" data-category="web">
+              <div class="project-image">WEB</div>
+              <div class="card-body">
+                <span class="tag">Web Development</span>
+                <h3>Digital Business Experience</h3>
+                <p>
+                  A clean digital presence focused on clear messaging, usability
+                  and responsive design.
+                </p>
+              </div>
+            </article>
+            <article class="card project-card" data-category="ai">
+              <div
+                class="project-image"
+                style="background: linear-gradient(145deg, #6650b7, #a58ae9)"
+              >
+                AI
+              </div>
+              <div class="card-body">
+                <span class="tag">AI Solutions</span>
+                <h3>Intelligent Workflow Concept</h3>
+                <p>
+                  A concept for simplifying repetitive tasks and supporting
+                  faster decisions.
+                </p>
+              </div>
+            </article>
+            <article class="card project-card" data-category="design">
+              <div
+                class="project-image"
+                style="background: linear-gradient(145deg, #39468f, #7a88dc)"
+              >
+                DESIGN
+              </div>
+              <div class="card-body">
+                <span class="tag">Creative Design</span>
+                <h3>Brand Identity System</h3>
+                <p>
+                  A visual direction designed to create consistency across
+                  digital touchpoints.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <img src="images/techveda-logo.jpeg" alt="" />TechVeda
+            </div>
+            <p>
+              Technology, creativity and thoughtful digital solutions — helping
+              businesses build what comes next.
+            </p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <div class="footer-links">
+              <a href="about.html">About Us</a
+              ><a href="service.html">Our Services</a
+              ><a href="portfolio.html">Portfolio</a
+              ><a href="blog.html">Insights & Blog</a>
+            </div>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <div class="footer-links">
+              <a href="service/app-development.html">App Development</a
+              ><a href="service/web-development.html">Web Development</a
+              ><a href="service/ai-solutions.html">AI Solutions</a
+              ><a href="service/blockchain-development.html"
+                >Blockchain Development</a
+              >
+            </div>
+          </div>
+          <div>
+            <h4>Let's connect</h4>
+            <div class="footer-links">
+              <a href="contact.html">Contact Us</a
+              ><a href="contact.html">Request a Proposal</a
+              ><a href="contact.html">Start a Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="year"></span> TechVeda Software. All rights
+            reserved.</span
+          ><span>Built with purpose. Designed for progress.</span>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
