@@ -8,6 +8,7 @@
       name="description"
       content="Brand identities, marketing creatives and visual assets that communicate clearly."
     />
+    <link rel="icon" href="../images/techveda-logo.jpeg" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -17,117 +18,155 @@
           ><img src="../images/techveda-logo.jpeg" alt="TechVeda logo" /><span
             >TechVeda</span
           ></a
-        ><button
-          class="menu-toggle"
-          aria-label="Toggle navigation"
-          aria-expanded="false"
         >
-          ☰
-        </button>
-        <nav class="nav-links">
-          <a href="../index.html">Home</a>
-          <a href="../about.html">About</a>
-
+        <nav class="nav-links" id="nav">
+          <a href="../index.html">Home</a><a href="../about.html">About</a>
           <div class="nav-drop">
-            <a href="../service.html" class="services-link">
-              Services
-            </a>
-
+            <a href="../service.html" class="active"
+              >Services
+              <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem"></i
+            ></a>
             <div class="drop-menu">
-              <a href="../service/app-development.html"> App Development </a>
-
-              <a href="../service/web-development.html"> Web Development </a>
-
-              <a href="../service/ai-solutions.html"> AI Solutions </a>
-
-              <a href="../service/blockchain-development.html">
-                Blockchain Development
-              </a>
-
-              <a href="../service/ui-ux-design.html"> UI/UX Design </a>
-
-              <a href="../service/digital-marketing.html"> Digital Marketing </a>
-
-              <a href="../service/virtual-assistant.html"> Virtual Assistant </a>
-
-              <a href="../service/creative-design.html"> Creative Design </a>
+              <a href="../service/app-development.html"
+                ><i class="fa-solid fa-mobile-screen"></i>App Development</a
+              ><a href="../service/web-development.html"
+                ><i class="fa-solid fa-globe"></i>Web Development</a
+              ><a href="../service/ai-solutions.html"
+                ><i class="fa-solid fa-brain"></i>AI Solutions</a
+              ><a href="../service/blockchain-development.html"
+                ><i class="fa-solid fa-link"></i>Blockchain Development</a
+              ><a href="../service/ui-ux-design.html"
+                ><i class="fa-solid fa-pen-ruler"></i>UI/UX Design</a
+              ><a href="../service/digital-marketing.html"
+                ><i class="fa-solid fa-chart-line"></i>Digital Marketing</a
+              ><a href="../service/virtual-assistant.html"
+                ><i class="fa-solid fa-headset"></i>Virtual Assistant</a
+              ><a href="../service/creative-design.html"
+                ><i class="fa-solid fa-palette"></i>Creative Design</a
+              >
             </div>
           </div>
-
-          <a href="../portfolio.html">Portfolio</a>
-          <a href="../blog.html">Blog</a>
-          <a href="../contact.html">Contact</a>
-
-          <a class="btn primary" href="../contact.html"> Get a Quote ↗ </a>
+          <a href="../portfolio.html">Portfolio</a
+          ><a href="../blog.html">Blog</a><a href="../contact.html">Contact</a>
         </nav>
+        <div class="nav-cta">
+          <a class="nav-phone" href="tel:+919782858382"
+            ><i class="fa-solid fa-phone"></i>+91 97828 58382</a
+          ><a class="btn primary sm" href="../contact.html"
+            >Book Free Consultation</a
+          >
+          <button
+            class="menu-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
       </div>
     </header>
     <main>
       <section class="page-hero">
         <div class="container">
-          <span class="eyebrow">Creative communication</span>
-          <h1>Creative <span style="color: var(--purple)">Design</span></h1>
+          <div class="crumbs">
+            <a href="../index.html">Home</a> /
+            <a href="../service.html">Services</a> / Creative Design
+          </div>
+          <span class="tag">Creative communication</span>
+          <h1>Creative Design</h1>
           <p>
             Brand identities, marketing creatives and visual assets that
             communicate clearly.
           </p>
-          <div style="margin-top: 24px">
+          <div class="hero-actions">
             <a class="btn primary" href="../contact.html"
-              >Discuss Your Project ↗</a
-            >
+              >Discuss Your Project <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </section>
       <section class="section">
         <div class="container split">
           <div>
-            <span class="eyebrow">What we offer</span>
+            <span class="tag">What we offer</span>
             <h2>Designed around your goals</h2>
             <p>
               Every business has different needs. We start by understanding your
               audience, objectives and constraints, then shape a solution that
               fits your context.
             </p>
-            <ul class="feature-list">
-              <li>Discovery and requirement planning</li>
-              <li>Tailored strategy and solution design</li>
-              <li>Quality-focused implementation</li>
+            <ul class="ticks">
+              <li>Logo and brand identity</li>
+              <li>Marketing creatives</li>
+              <li>Social media graphics</li>
+              <li>Print and presentation design</li>
               <li>Responsive support and improvement</li>
             </ul>
-            <a class="btn primary" href="../contact.html"
-              >Request a Consultation →</a
-            >
+            <a class="btn blue" href="../contact.html"
+              >Request a Consultation <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
-          <div class="visual-box">
-            <img src="../images/techveda-logo.jpeg" alt="TechVeda logo" />
-            <div class="chip chip-one">◈ Creative Design</div>
-            <div class="chip chip-two">Built around your needs</div>
+          <div class="panel">
+            <i class="fa-solid fa-palette"></i>
+            <h3 style="color: #fff; margin: 0">Creative Design</h3>
+            <div class="pills">
+              <span class="pill">Branding</span
+              ><span class="pill">Graphics</span
+              ><span class="pill">Social creatives</span
+              ><span class="pill">Presentations</span>
+            </div>
           </div>
         </div>
       </section>
-      <section class="section soft">
+      <section class="section dark">
         <div class="container">
           <div class="section-head">
-            <span class="eyebrow">Our process</span>
+            <span class="tag">Our process</span>
             <h2>Clear steps. Collaborative delivery.</h2>
             <p>
               We keep you involved throughout the journey so the solution stays
               aligned with your goals.
             </p>
           </div>
-          <div class="stats">
-            <div class="stat"><strong>01</strong><span>Understand</span></div>
-            <div class="stat"><strong>02</strong><span>Plan</span></div>
-            <div class="stat"><strong>03</strong><span>Create</span></div>
-            <div class="stat"><strong>04</strong><span>Refine</span></div>
+          <div class="steps">
+            <div class="step">
+              <b>01</b>
+              <h3>Discover</h3>
+              <p>
+                We learn about your goals, users and challenges before defining
+                the work.
+              </p>
+            </div>
+            <div class="step">
+              <b>02</b>
+              <h3>Plan</h3>
+              <p>
+                We shape scope, design and technical approach with clear
+                priorities.
+              </p>
+            </div>
+            <div class="step">
+              <b>03</b>
+              <h3>Design & Develop</h3>
+              <p>
+                We build in stages, share progress and test what matters most.
+              </p>
+            </div>
+            <div class="step">
+              <b>04</b>
+              <h3>Launch & Improve</h3>
+              <p>
+                We prepare the release and keep improving with ongoing support.
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <section class="section">
         <div class="container">
-          <div class="content-grid">
+          <div class="grid g2">
             <article class="card">
-              <div class="service-icon">✓</div>
+              <div class="ico"><i class="fa-solid fa-check"></i></div>
               <h3>Practical and purposeful</h3>
               <p>
                 We focus on clear outcomes and useful solutions rather than
@@ -135,7 +174,7 @@
               </p>
             </article>
             <article class="card">
-              <div class="service-icon">✦</div>
+              <div class="ico"><i class="fa-solid fa-seedling"></i></div>
               <h3>Made to evolve</h3>
               <p>
                 We consider flexibility, usability and future needs as part of
@@ -152,7 +191,9 @@
               <h2>Ready to explore creative design?</h2>
               <p>Let's discuss your needs and map out the next step.</p>
             </div>
-            <a class="btn light" href="../contact.html">Contact TechVeda →</a>
+            <a class="btn primary" href="../contact.html"
+              >Contact TechVeda <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </section>
@@ -170,12 +211,13 @@
             </p>
           </div>
           <div>
-            <h4>Explore</h4>
+            <h4>Company</h4>
             <div class="footer-links">
               <a href="../about.html">About Us</a
               ><a href="../service.html">Our Services</a
               ><a href="../portfolio.html">Portfolio</a
-              ><a href="../blog.html">Insights & Blog</a>
+              ><a href="../blog.html">Insights &amp; Blog</a
+              ><a href="../contact.html">Contact Us</a>
             </div>
           </div>
           <div>
@@ -186,15 +228,20 @@
               ><a href="../service/ai-solutions.html">AI Solutions</a
               ><a href="../service/blockchain-development.html"
                 >Blockchain Development</a
-              >
+              ><a href="../service/ui-ux-design.html">UI/UX Design</a
+              ><a href="../service/digital-marketing.html">Digital Marketing</a>
             </div>
           </div>
           <div>
-            <h4>Let's connect</h4>
+            <h4>Contact</h4>
             <div class="footer-links">
-              <a href="../contact.html">Contact Us</a
-              ><a href="../contact.html">Request a Proposal</a
-              ><a href="../contact.html">Start a Project</a>
+              <a href="tel:+919782858382"
+                ><i class="fa-solid fa-phone"></i>+91 97828 58382</a
+              ><a href="mailto:Techvedasoftware@gmail.com"
+                ><i class="fa-solid fa-envelope"></i>Techvedasoftware@gmail.com</a
+              ><span
+                ><i class="fa-solid fa-location-dot"></i>Jaipur, India</span
+              >
             </div>
           </div>
         </div>
@@ -206,6 +253,12 @@
         </div>
       </div>
     </footer>
+    <a
+      class="wa"
+      href="https://wa.me/916375777464"
+      aria-label="Chat on WhatsApp"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
     <script src="../js/script.js"></script>
   </body>
 </html>

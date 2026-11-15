@@ -6,8 +6,9 @@
     <title>Our Services | TechVeda</title>
     <meta
       name="description"
-      content="Explore TechVeda services including app, web, AI, blockchain, design and marketing."
+      content="Explore TechVeda services: app, web, AI, blockchain, UI/UX, digital marketing, virtual assistant and creative design."
     />
+    <link rel="icon" href="images/techveda-logo.jpeg" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -17,59 +18,58 @@
           ><img src="images/techveda-logo.jpeg" alt="TechVeda logo" /><span
             >TechVeda</span
           ></a
-        ><button
-          class="menu-toggle"
-          aria-label="Toggle navigation"
-          aria-expanded="false"
         >
-          ☰
-        </button>
-        <nav class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-
+        <nav class="nav-links" id="nav">
+          <a href="index.html">Home</a><a href="about.html">About</a>
           <div class="nav-drop">
-            <a href="service.html" class="services-link">
-              Services
-            </a>
-
+            <a href="service.html" class="active"
+              >Services
+              <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem"></i
+            ></a>
             <div class="drop-menu">
-              <a href="service/app-development.html"> App Development </a>
-
-              <a href="service/web-development.html"> Web Development </a>
-
-              <a href="service/ai-solutions.html"> AI Solutions </a>
-
-              <a href="service/blockchain-development.html">
-                Blockchain Development
-              </a>
-
-              <a href="service/ui-ux-design.html"> UI/UX Design </a>
-
-              <a href="service/digital-marketing.html"> Digital Marketing </a>
-
-              <a href="service/virtual-assistant.html"> Virtual Assistant </a>
-
-              <a href="service/creative-design.html"> Creative Design </a>
+              <a href="service/app-development.html"
+                ><i class="fa-solid fa-mobile-screen"></i>App Development</a
+              ><a href="service/web-development.html"
+                ><i class="fa-solid fa-globe"></i>Web Development</a
+              ><a href="service/ai-solutions.html"
+                ><i class="fa-solid fa-brain"></i>AI Solutions</a
+              ><a href="service/blockchain-development.html"
+                ><i class="fa-solid fa-link"></i>Blockchain Development</a
+              ><a href="service/ui-ux-design.html"
+                ><i class="fa-solid fa-pen-ruler"></i>UI/UX Design</a
+              ><a href="service/digital-marketing.html"
+                ><i class="fa-solid fa-chart-line"></i>Digital Marketing</a
+              ><a href="service/virtual-assistant.html"
+                ><i class="fa-solid fa-headset"></i>Virtual Assistant</a
+              ><a href="service/creative-design.html"
+                ><i class="fa-solid fa-palette"></i>Creative Design</a
+              >
             </div>
           </div>
-
-          <a href="portfolio.html">Portfolio</a>
-          <a href="blog.html">Blog</a>
-          <a href="contact.html">Contact</a>
-
-          <a class="btn primary" href="contact.html"> Get a Quote ↗ </a>
+          <a href="portfolio.html">Portfolio</a><a href="blog.html">Blog</a
+          ><a href="contact.html">Contact</a>
         </nav>
+        <div class="nav-cta">
+          <a class="nav-phone" href="tel:+919782858382"
+            ><i class="fa-solid fa-phone"></i>+91 97828 58382</a
+          ><a class="btn primary sm" href="contact.html"
+            >Book Free Consultation</a
+          >
+          <button
+            class="menu-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
       </div>
     </header>
     <main>
       <section class="page-hero">
         <div class="container">
-          <span class="eyebrow">Our capabilities</span>
-          <h1>
-            Digital solutions for
-            <span style="color: var(--purple)">what's next.</span>
-          </h1>
+          <span class="tag">Our capabilities</span>
+          <h1>Digital solutions for what's next.</h1>
           <p>
             Explore our services across software, design, intelligent solutions
             and business support. Each engagement is shaped around your goals.
@@ -78,99 +78,190 @@
       </section>
       <section class="section">
         <div class="container">
-          <div class="cards">
-            <article class="card reveal">
-              <div class="service-icon">📱</div>
+          <div
+            class="grid g4"
+            style="grid-template-columns: repeat(auto-fit, minmax(270px, 1fr))"
+          >
+            <article class="card">
+              <div class="ico"><i class="fa-solid fa-mobile-screen"></i></div>
               <h3>App Development</h3>
               <p>
                 Mobile applications for Android and iOS, built around
                 performance, usability and your users.
               </p>
-              <a href="service/app-development.html">Explore service →</a>
+              <ul class="ticks">
+                <li>Android and iOS applications</li>
+                <li>Cross-platform apps</li>
+                <li>Backend and API integration</li>
+                <li>App updates and improvements</li>
+              </ul>
+              <a class="more" href="service/app-development.html"
+                >Explore service <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </article>
-            <article class="card reveal">
-              <div class="service-icon">🌐</div>
+            <article class="card">
+              <div class="ico"><i class="fa-solid fa-globe"></i></div>
               <h3>Web Development</h3>
               <p>
                 Responsive websites, web applications and e-commerce experiences
                 built for growth.
               </p>
-              <a href="service/web-development.html">Explore service →</a>
+              <ul class="ticks">
+                <li>Corporate and business websites</li>
+                <li>Custom web applications</li>
+                <li>E-commerce stores and payments</li>
+                <li>Content management systems</li>
+              </ul>
+              <a class="more" href="service/web-development.html"
+                >Explore service <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </article>
-            <article class="card reveal">
-              <div class="service-icon">✦</div>
+            <article class="card">
+              <div class="ico"><i class="fa-solid fa-brain"></i></div>
               <h3>AI Solutions</h3>
               <p>
                 AI-powered workflows, automation and intelligent tools for
                 modern business needs.
               </p>
-              <a href="service/ai-solutions.html">Explore service →</a>
+              <ul class="ticks">
+                <li>Workflow automation</li>
+                <li>AI assistants and chatbots</li>
+                <li>WhatsApp automation</li>
+                <li>Data analysis and insights</li>
+              </ul>
+              <a class="more" href="service/ai-solutions.html"
+                >Explore service <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </article>
-            <article class="card reveal">
-              <div class="service-icon">⛓</div>
+            <article class="card">
+              <div class="ico"><i class="fa-solid fa-link"></i></div>
               <h3>Blockchain Development</h3>
               <p>
                 Purpose-built blockchain applications, decentralized platforms
                 and smart-contract solutions.
               </p>
-              <a href="service/blockchain-development.html"
-                >Explore service →</a
-              >
+              <ul class="ticks">
+                <li>Smart-contract development</li>
+                <li>Decentralized applications</li>
+                <li>Wallet and token integration</li>
+                <li>Security-minded architecture</li>
+              </ul>
+              <a class="more" href="service/blockchain-development.html"
+                >Explore service <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </article>
-            <article class="card reveal">
-              <div class="service-icon">✎</div>
+            <article class="card">
+              <div class="ico"><i class="fa-solid fa-pen-ruler"></i></div>
               <h3>UI/UX Design</h3>
               <p>
                 Research-led interfaces, wireframes and prototypes that make
                 digital products intuitive.
               </p>
-              <a href="service/ui-ux-design.html">Explore service →</a>
+              <ul class="ticks">
+                <li>User research and journeys</li>
+                <li>Wireframes and prototypes</li>
+                <li>Interface and visual design</li>
+                <li>Design systems</li>
+              </ul>
+              <a class="more" href="service/ui-ux-design.html"
+                >Explore service <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </article>
-            <article class="card reveal">
-              <div class="service-icon">↗</div>
+            <article class="card">
+              <div class="ico"><i class="fa-solid fa-chart-line"></i></div>
               <h3>Digital Marketing</h3>
               <p>
                 Digital strategies for search visibility, audience engagement
                 and sustainable growth.
               </p>
-              <a href="service/digital-marketing.html">Explore service →</a>
+              <ul class="ticks">
+                <li>Search engine optimisation</li>
+                <li>Social media marketing</li>
+                <li>Paid campaigns</li>
+                <li>Content and analytics</li>
+              </ul>
+              <a class="more" href="service/digital-marketing.html"
+                >Explore service <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </article>
-            <article class="card reveal">
-              <div class="service-icon">◎</div>
+            <article class="card">
+              <div class="ico"><i class="fa-solid fa-headset"></i></div>
               <h3>Virtual Assistant</h3>
               <p>
                 Flexible administrative, customer-support and operational
                 assistance for busy teams.
               </p>
-              <a href="service/virtual-assistant.html">Explore service →</a>
+              <ul class="ticks">
+                <li>Administrative support</li>
+                <li>Customer support handling</li>
+                <li>Data entry and research</li>
+                <li>Scheduling and coordination</li>
+              </ul>
+              <a class="more" href="service/virtual-assistant.html"
+                >Explore service <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </article>
-            <article class="card reveal">
-              <div class="service-icon">◈</div>
+            <article class="card">
+              <div class="ico"><i class="fa-solid fa-palette"></i></div>
               <h3>Creative Design</h3>
               <p>
                 Brand identities, marketing creatives and visual assets that
                 communicate clearly.
               </p>
-              <a href="service/creative-design.html">Explore service →</a>
+              <ul class="ticks">
+                <li>Logo and brand identity</li>
+                <li>Marketing creatives</li>
+                <li>Social media graphics</li>
+                <li>Print and presentation design</li>
+              </ul>
+              <a class="more" href="service/creative-design.html"
+                >Explore service <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </article>
           </div>
         </div>
       </section>
-      <section class="section soft">
+      <section class="section dark">
         <div class="container">
           <div class="section-head">
-            <span class="eyebrow">Our process</span>
+            <span class="tag">Our process</span>
             <h2>A thoughtful process. Better outcomes.</h2>
             <p>
               We keep projects clear and collaborative, from understanding your
               needs through delivery.
             </p>
           </div>
-          <div class="stats">
-            <div class="stat"><strong>01</strong><span>Discover</span></div>
-            <div class="stat"><strong>02</strong><span>Define</span></div>
-            <div class="stat"><strong>03</strong><span>Deliver</span></div>
-            <div class="stat"><strong>04</strong><span>Improve</span></div>
+          <div class="steps">
+            <div class="step">
+              <b>01</b>
+              <h3>Discover</h3>
+              <p>
+                We learn about your goals, users and challenges before defining
+                the work.
+              </p>
+            </div>
+            <div class="step">
+              <b>02</b>
+              <h3>Plan</h3>
+              <p>
+                We shape scope, design and technical approach with clear
+                priorities.
+              </p>
+            </div>
+            <div class="step">
+              <b>03</b>
+              <h3>Design & Develop</h3>
+              <p>
+                We build in stages, share progress and test what matters most.
+              </p>
+            </div>
+            <div class="step">
+              <b>04</b>
+              <h3>Launch & Improve</h3>
+              <p>
+                We prepare the release and keep improving with ongoing support.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -184,7 +275,9 @@
                 direction.
               </p>
             </div>
-            <a class="btn light" href="contact.html">Discuss Your Project →</a>
+            <a class="btn primary" href="contact.html"
+              >Discuss Your Project <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </section>
@@ -202,12 +295,13 @@
             </p>
           </div>
           <div>
-            <h4>Explore</h4>
+            <h4>Company</h4>
             <div class="footer-links">
               <a href="about.html">About Us</a
               ><a href="service.html">Our Services</a
               ><a href="portfolio.html">Portfolio</a
-              ><a href="blog.html">Insights & Blog</a>
+              ><a href="blog.html">Insights &amp; Blog</a
+              ><a href="contact.html">Contact Us</a>
             </div>
           </div>
           <div>
@@ -218,15 +312,20 @@
               ><a href="service/ai-solutions.html">AI Solutions</a
               ><a href="service/blockchain-development.html"
                 >Blockchain Development</a
-              >
+              ><a href="service/ui-ux-design.html">UI/UX Design</a
+              ><a href="service/digital-marketing.html">Digital Marketing</a>
             </div>
           </div>
           <div>
-            <h4>Let's connect</h4>
+            <h4>Contact</h4>
             <div class="footer-links">
-              <a href="contact.html">Contact Us</a
-              ><a href="contact.html">Request a Proposal</a
-              ><a href="contact.html">Start a Project</a>
+              <a href="tel:+919782858382"
+                ><i class="fa-solid fa-phone"></i>+91 97828 58382</a
+              ><a href="mailto:Techvedasoftware@gmail.com"
+                ><i class="fa-solid fa-envelope"></i>Techvedasoftware@gmail.com</a
+              ><span
+                ><i class="fa-solid fa-location-dot"></i>Jaipur, India</span
+              >
             </div>
           </div>
         </div>
@@ -238,6 +337,12 @@
         </div>
       </div>
     </footer>
+    <a
+      class="wa"
+      href="https://wa.me/916375777464"
+      aria-label="Chat on WhatsApp"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
     <script src="js/script.js"></script>
   </body>
 </html>

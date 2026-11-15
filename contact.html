@@ -6,8 +6,9 @@
     <title>Contact Us | TechVeda</title>
     <meta
       name="description"
-      content="Contact TechVeda to discuss software, design and digital projects."
+      content="Contact TechVeda to discuss your project."
     />
+    <link rel="icon" href="images/techveda-logo.jpeg" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -17,59 +18,58 @@
           ><img src="images/techveda-logo.jpeg" alt="TechVeda logo" /><span
             >TechVeda</span
           ></a
-        ><button
-          class="menu-toggle"
-          aria-label="Toggle navigation"
-          aria-expanded="false"
         >
-          ☰
-        </button>
-        <nav class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-
+        <nav class="nav-links" id="nav">
+          <a href="index.html">Home</a><a href="about.html">About</a>
           <div class="nav-drop">
-            <a href="service.html" class="services-link">
-              Services
-            </a>
-
+            <a href="service.html"
+              >Services
+              <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem"></i
+            ></a>
             <div class="drop-menu">
-              <a href="service/app-development.html"> App Development </a>
-
-              <a href="service/web-development.html"> Web Development </a>
-
-              <a href="service/ai-solutions.html"> AI Solutions </a>
-
-              <a href="service/blockchain-development.html">
-                Blockchain Development
-              </a>
-
-              <a href="service/ui-ux-design.html"> UI/UX Design </a>
-
-              <a href="service/digital-marketing.html"> Digital Marketing </a>
-
-              <a href="service/virtual-assistant.html"> Virtual Assistant </a>
-
-              <a href="service/creative-design.html"> Creative Design </a>
+              <a href="service/app-development.html"
+                ><i class="fa-solid fa-mobile-screen"></i>App Development</a
+              ><a href="service/web-development.html"
+                ><i class="fa-solid fa-globe"></i>Web Development</a
+              ><a href="service/ai-solutions.html"
+                ><i class="fa-solid fa-brain"></i>AI Solutions</a
+              ><a href="service/blockchain-development.html"
+                ><i class="fa-solid fa-link"></i>Blockchain Development</a
+              ><a href="service/ui-ux-design.html"
+                ><i class="fa-solid fa-pen-ruler"></i>UI/UX Design</a
+              ><a href="service/digital-marketing.html"
+                ><i class="fa-solid fa-chart-line"></i>Digital Marketing</a
+              ><a href="service/virtual-assistant.html"
+                ><i class="fa-solid fa-headset"></i>Virtual Assistant</a
+              ><a href="service/creative-design.html"
+                ><i class="fa-solid fa-palette"></i>Creative Design</a
+              >
             </div>
           </div>
-
-          <a href="portfolio.html">Portfolio</a>
-          <a href="blog.html">Blog</a>
-          <a href="contact.html">Contact</a>
-
-          <a class="btn primary" href="contact.html"> Get a Quote ↗ </a>
+          <a href="portfolio.html">Portfolio</a><a href="blog.html">Blog</a
+          ><a href="contact.html" class="active">Contact</a>
         </nav>
+        <div class="nav-cta">
+          <a class="nav-phone" href="tel:+919782858382"
+            ><i class="fa-solid fa-phone"></i>+91 97828 58382</a
+          ><a class="btn primary sm" href="contact.html"
+            >Book Free Consultation</a
+          >
+          <button
+            class="menu-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
       </div>
     </header>
     <main>
       <section class="page-hero">
         <div class="container">
-          <span class="eyebrow">Contact TechVeda</span>
-          <h1>
-            Let's talk about
-            <span style="color: var(--purple)">what's possible.</span>
-          </h1>
+          <span class="tag">Contact TechVeda</span>
+          <h1>Let's talk about what's possible.</h1>
           <p>
             Have a project in mind, a challenge to solve or an idea to explore?
             Send us a message and start the conversation.
@@ -79,31 +79,56 @@
       <section class="section">
         <div class="container contact-grid">
           <div>
-            <span class="eyebrow">Get in touch</span>
+            <span class="tag">Get in touch</span>
             <h2>Every great project starts with a conversation.</h2>
             <p>
               Share a few details about your goals and the kind of support
-              you're looking for.
+              you're looking for. Our team replies with practical next steps.
             </p>
-            <div class="card" style="margin-top: 24px">
-              <h3>Project enquiries</h3>
-              <p>
-                Use the form to tell us about your project, service needs and
-                timeline.
-              </p>
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Call us</h4>
+                <p><a href="tel:+919782858382">+91 97828 58382</a></p>
+              </div>
             </div>
-            <div class="card" style="margin-top: 16px">
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>
+                  <a href="mailto:hello@techveda.com">hello@techveda.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <h4>WhatsApp</h4>
+                <p>
+                  <a href="https://wa.me/916375777464">63757 77464</a>
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Office</h4>
+                <p>Jaipur, India</p>
+              </div>
+            </div>
+            <div class="card" style="margin-top: 28px">
               <h3>What happens next?</h3>
-              <p>
-                We'll review your brief and discuss suitable next steps. Connect
-                the form to your real company email or backend to receive
-                submissions.
-              </p>
+              <ul class="ticks">
+                <li>You share your project details</li>
+                <li>We review and set up a discovery call</li>
+                <li>You get a clear plan and recommendations</li>
+              </ul>
             </div>
           </div>
           <form class="form-card contact-form">
             <h3>Tell us about your project</h3>
-            <p>Fields marked below help us understand your enquiry.</p>
+            <p>Fields marked * help us understand your enquiry.</p>
             <div class="form-grid">
               <div class="field">
                 <label for="name">Full name *</label
@@ -152,8 +177,8 @@
                 ></textarea>
               </div>
               <div class="field full">
-                <button class="btn primary" type="submit">
-                  Send Enquiry ↗
+                <button class="btn blue" type="submit">
+                  Send Enquiry <i class="fa-solid fa-paper-plane"></i>
                 </button>
                 <div class="notice" role="status"></div>
               </div>
@@ -175,12 +200,13 @@
             </p>
           </div>
           <div>
-            <h4>Explore</h4>
+            <h4>Company</h4>
             <div class="footer-links">
               <a href="about.html">About Us</a
               ><a href="service.html">Our Services</a
               ><a href="portfolio.html">Portfolio</a
-              ><a href="blog.html">Insights & Blog</a>
+              ><a href="blog.html">Insights &amp; Blog</a
+              ><a href="contact.html">Contact Us</a>
             </div>
           </div>
           <div>
@@ -191,15 +217,20 @@
               ><a href="service/ai-solutions.html">AI Solutions</a
               ><a href="service/blockchain-development.html"
                 >Blockchain Development</a
-              >
+              ><a href="service/ui-ux-design.html">UI/UX Design</a
+              ><a href="service/digital-marketing.html">Digital Marketing</a>
             </div>
           </div>
           <div>
-            <h4>Let's connect</h4>
+            <h4>Contact</h4>
             <div class="footer-links">
-              <a href="contact.html">Contact Us</a
-              ><a href="contact.html">Request a Proposal</a
-              ><a href="contact.html">Start a Project</a>
+              <a href="tel:+919782858382"
+                ><i class="fa-solid fa-phone"></i>+91 97828 58382</a
+              ><a href="mailto:Techvedasoftware@gmail.com"
+                ><i class="fa-solid fa-envelope"></i>Techvedasoftware@gmail.com</a
+              ><span
+                ><i class="fa-solid fa-location-dot"></i>Jaipur, India</span
+              >
             </div>
           </div>
         </div>
@@ -211,6 +242,12 @@
         </div>
       </div>
     </footer>
+    <a
+      class="wa"
+      href="https://wa.me/916375777464"
+      aria-label="Chat on WhatsApp"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -3,14 +3,14 @@ const toggle = document.querySelector(".menu-toggle"),
 if (toggle && nav)
   toggle.addEventListener("click", () => {
     nav.classList.toggle("open");
-    toggle.setAttribute(
-      "aria-expanded",
-      nav.classList.contains("open") ? "true" : "false",
-    );
+    toggle.setAttribute("aria-expanded", nav.classList.contains("open"));
   });
-document.querySelectorAll(".nav-drop>button").forEach((b) =>
-  b.addEventListener("click", () => {
-    if (innerWidth <= 760) b.parentElement.classList.toggle("open");
+document.querySelectorAll(".nav-drop>a").forEach((a) =>
+  a.addEventListener("click", (e) => {
+    if (innerWidth <= 860 && !a.parentElement.classList.contains("open")) {
+      e.preventDefault();
+      a.parentElement.classList.add("open");
+    }
   }),
 );
 document.querySelectorAll(".filter-btn").forEach((b) =>
@@ -31,29 +31,13 @@ document.querySelectorAll(".filter-btn").forEach((b) =>
       );
   }),
 );
-if ("IntersectionObserver" in window) {
-  const io = new IntersectionObserver(
-    (es) =>
-      es.forEach((e) => {
-        if (e.isIntersecting) {
-          e.target.classList.add("visible");
-          io.unobserve(e.target);
-        }
-      }),
-    { threshold: 0.1 },
-  );
-  document.querySelectorAll(".reveal").forEach((x) => io.observe(x));
-} else
-  document
-    .querySelectorAll(".reveal")
-    .forEach((x) => x.classList.add("visible"));
 document.querySelectorAll(".contact-form").forEach((f) =>
   f.addEventListener("submit", (e) => {
     e.preventDefault();
     const n = f.querySelector(".notice");
     if (n) {
       n.textContent =
-        "Thanks! This demo form is working in the browser. Connect a backend/email service to receive enquiries.";
+        "Thanks! This demo form works in the browser only. Connect a backend or email service to receive enquiries.";
       n.classList.add("show");
     }
     f.reset();

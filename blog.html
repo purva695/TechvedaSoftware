@@ -6,8 +6,9 @@
     <title>Blog & Insights | TechVeda</title>
     <meta
       name="description"
-      content="Ideas and insights about technology, user experience and digital growth."
+      content="Ideas on technology, design, digital growth and the future of work."
     />
+    <link rel="icon" href="images/techveda-logo.jpeg" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -17,59 +18,59 @@
           ><img src="images/techveda-logo.jpeg" alt="TechVeda logo" /><span
             >TechVeda</span
           ></a
-        ><button
-          class="menu-toggle"
-          aria-label="Toggle navigation"
-          aria-expanded="false"
         >
-          ☰
-        </button>
-        <nav class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-
+        <nav class="nav-links" id="nav">
+          <a href="index.html">Home</a><a href="about.html">About</a>
           <div class="nav-drop">
-            <a href="service.html" class="services-link">
-              Services
-            </a>
-
+            <a href="service.html"
+              >Services
+              <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem"></i
+            ></a>
             <div class="drop-menu">
-              <a href="service/app-development.html"> App Development </a>
-
-              <a href="service/web-development.html"> Web Development </a>
-
-              <a href="service/ai-solutions.html"> AI Solutions </a>
-
-              <a href="service/blockchain-development.html">
-                Blockchain Development
-              </a>
-
-              <a href="service/ui-ux-design.html"> UI/UX Design </a>
-
-              <a href="service/digital-marketing.html"> Digital Marketing </a>
-
-              <a href="service/virtual-assistant.html"> Virtual Assistant </a>
-
-              <a href="service/creative-design.html"> Creative Design </a>
+              <a href="service/app-development.html"
+                ><i class="fa-solid fa-mobile-screen"></i>App Development</a
+              ><a href="service/web-development.html"
+                ><i class="fa-solid fa-globe"></i>Web Development</a
+              ><a href="service/ai-solutions.html"
+                ><i class="fa-solid fa-brain"></i>AI Solutions</a
+              ><a href="service/blockchain-development.html"
+                ><i class="fa-solid fa-link"></i>Blockchain Development</a
+              ><a href="service/ui-ux-design.html"
+                ><i class="fa-solid fa-pen-ruler"></i>UI/UX Design</a
+              ><a href="service/digital-marketing.html"
+                ><i class="fa-solid fa-chart-line"></i>Digital Marketing</a
+              ><a href="service/virtual-assistant.html"
+                ><i class="fa-solid fa-headset"></i>Virtual Assistant</a
+              ><a href="service/creative-design.html"
+                ><i class="fa-solid fa-palette"></i>Creative Design</a
+              >
             </div>
           </div>
-
-          <a href="portfolio.html">Portfolio</a>
-          <a href="blog.html">Blog</a>
-          <a href="contact.html">Contact</a>
-
-          <a class="btn primary" href="contact.html"> Get a Quote ↗ </a>
+          <a href="portfolio.html">Portfolio</a
+          ><a href="blog.html" class="active">Blog</a
+          ><a href="contact.html">Contact</a>
         </nav>
+        <div class="nav-cta">
+          <a class="nav-phone" href="tel:+919782858382"
+            ><i class="fa-solid fa-phone"></i>+91 97828 58382</a
+          ><a class="btn primary sm" href="contact.html"
+            >Book Free Consultation</a
+          >
+          <button
+            class="menu-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
       </div>
     </header>
     <main>
       <section class="page-hero">
         <div class="container">
-          <span class="eyebrow">Ideas & insights</span>
-          <h1>
-            Perspectives for a
-            <span style="color: var(--purple)">digital world.</span>
-          </h1>
+          <span class="tag">Ideas & insights</span>
+          <h1>Perspectives for a digital world.</h1>
           <p>
             Explore ideas on technology, design, digital growth and the future
             of work.
@@ -88,42 +89,50 @@
               Digital Growth
             </button>
           </div>
-          <div class="cards">
+          <div class="grid g3">
             <article class="card" data-category="technology">
-              <div class="blog-art">✦</div>
-              <span class="tag">Technology</span>
+              <div class="blog-art">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <span class="tag" style="align-self: flex-start">Technology</span>
               <h3>How thoughtful automation can support growing teams</h3>
               <p>
                 Explore where automation can help reduce repetitive tasks and
                 create space for more valuable work.
               </p>
-              <a href="contact.html">Discuss this topic →</a>
+              <a class="more" href="contact.html"
+                >Discuss this topic <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </article>
             <article class="card" data-category="design">
-              <div class="blog-art">✎</div>
-              <span class="tag">Design</span>
+              <div class="blog-art"><i class="fa-solid fa-pen-ruler"></i></div>
+              <span class="tag" style="align-self: flex-start">Design</span>
               <h3>Why user experience matters in digital products</h3>
               <p>
                 Good experiences begin with understanding user needs and
                 removing friction from important tasks.
               </p>
-              <a href="contact.html">Discuss this topic →</a>
+              <a class="more" href="contact.html"
+                >Discuss this topic <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </article>
             <article class="card" data-category="growth">
-              <div class="blog-art">↗</div>
-              <span class="tag">Digital Growth</span>
+              <div class="blog-art">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+              </div>
+              <span class="tag" style="align-self: flex-start"
+                >Digital Growth</span
+              >
               <h3>Building a stronger digital presence</h3>
               <p>
                 Learn how consistent messaging, useful content and a clear user
                 journey work together.
               </p>
-              <a href="contact.html">Discuss this topic →</a>
+              <a class="more" href="contact.html"
+                >Discuss this topic <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </article>
           </div>
-          <p style="text-align: center; margin-top: 30px; font-size: 0.88rem">
-            These are sample article cards. Replace with approved company blog
-            content when publishing.
-          </p>
         </div>
       </section>
     </main>
@@ -140,12 +149,13 @@
             </p>
           </div>
           <div>
-            <h4>Explore</h4>
+            <h4>Company</h4>
             <div class="footer-links">
               <a href="about.html">About Us</a
               ><a href="service.html">Our Services</a
               ><a href="portfolio.html">Portfolio</a
-              ><a href="blog.html">Insights & Blog</a>
+              ><a href="blog.html">Insights &amp; Blog</a
+              ><a href="contact.html">Contact Us</a>
             </div>
           </div>
           <div>
@@ -156,15 +166,20 @@
               ><a href="service/ai-solutions.html">AI Solutions</a
               ><a href="service/blockchain-development.html"
                 >Blockchain Development</a
-              >
+              ><a href="service/ui-ux-design.html">UI/UX Design</a
+              ><a href="service/digital-marketing.html">Digital Marketing</a>
             </div>
           </div>
           <div>
-            <h4>Let's connect</h4>
+            <h4>Contact</h4>
             <div class="footer-links">
-              <a href="contact.html">Contact Us</a
-              ><a href="contact.html">Request a Proposal</a
-              ><a href="contact.html">Start a Project</a>
+              <a href="tel:+919782858382"
+                ><i class="fa-solid fa-phone"></i>+91 97828 58382</a
+              ><a href="mailto:Techvedasoftware@gmail.com"
+                ><i class="fa-solid fa-envelope"></i>Techvedasoftware@gmail.com</a
+              ><span
+                ><i class="fa-solid fa-location-dot"></i>Jaipur, India</span
+              >
             </div>
           </div>
         </div>
@@ -176,6 +191,12 @@
         </div>
       </div>
     </footer>
+    <a
+      class="wa"
+      href="https://wa.me/916375777464"
+      aria-label="Chat on WhatsApp"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
     <script src="js/script.js"></script>
   </body>
 </html>

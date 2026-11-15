@@ -6,8 +6,9 @@
     <title>Portfolio | TechVeda</title>
     <meta
       name="description"
-      content="Explore sample project showcase layouts for TechVeda."
+      content="Selected projects and capabilities from TechVeda."
     />
+    <link rel="icon" href="images/techveda-logo.jpeg" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -17,58 +18,58 @@
           ><img src="images/techveda-logo.jpeg" alt="TechVeda logo" /><span
             >TechVeda</span
           ></a
-        ><button
-          class="menu-toggle"
-          aria-label="Toggle navigation"
-          aria-expanded="false"
         >
-          ☰
-        </button>
-        <nav class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-
+        <nav class="nav-links" id="nav">
+          <a href="index.html">Home</a><a href="about.html">About</a>
           <div class="nav-drop">
-            <a href="service.html" class="services-link">
-              Services
-            </a>
-
+            <a href="service.html"
+              >Services
+              <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem"></i
+            ></a>
             <div class="drop-menu">
-              <a href="service/app-development.html"> App Development </a>
-
-              <a href="service/web-development.html"> Web Development </a>
-
-              <a href="service/ai-solutions.html"> AI Solutions </a>
-
-              <a href="service/blockchain-development.html">
-                Blockchain Development
-              </a>
-
-              <a href="service/ui-ux-design.html"> UI/UX Design </a>
-
-              <a href="service/digital-marketing.html"> Digital Marketing </a>
-
-              <a href="service/virtual-assistant.html"> Virtual Assistant </a>
-
-              <a href="service/creative-design.html"> Creative Design </a>
+              <a href="service/app-development.html"
+                ><i class="fa-solid fa-mobile-screen"></i>App Development</a
+              ><a href="service/web-development.html"
+                ><i class="fa-solid fa-globe"></i>Web Development</a
+              ><a href="service/ai-solutions.html"
+                ><i class="fa-solid fa-brain"></i>AI Solutions</a
+              ><a href="service/blockchain-development.html"
+                ><i class="fa-solid fa-link"></i>Blockchain Development</a
+              ><a href="service/ui-ux-design.html"
+                ><i class="fa-solid fa-pen-ruler"></i>UI/UX Design</a
+              ><a href="service/digital-marketing.html"
+                ><i class="fa-solid fa-chart-line"></i>Digital Marketing</a
+              ><a href="service/virtual-assistant.html"
+                ><i class="fa-solid fa-headset"></i>Virtual Assistant</a
+              ><a href="service/creative-design.html"
+                ><i class="fa-solid fa-palette"></i>Creative Design</a
+              >
             </div>
           </div>
-
-          <a href="portfolio.html">Portfolio</a>
-          <a href="blog.html">Blog</a>
-          <a href="contact.html">Contact</a>
-
-          <a class="btn primary" href="contact.html"> Get a Quote ↗ </a>
+          <a href="portfolio.html" class="active">Portfolio</a
+          ><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
         </nav>
+        <div class="nav-cta">
+          <a class="nav-phone" href="tel:+919782858382"
+            ><i class="fa-solid fa-phone"></i>+91 97828 58382</a
+          ><a class="btn primary sm" href="contact.html"
+            >Book Free Consultation</a
+          >
+          <button
+            class="menu-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
       </div>
     </header>
     <main>
       <section class="page-hero">
         <div class="container">
-          <span class="eyebrow">Selected capabilities</span>
-          <h1>
-            Ideas made <span style="color: var(--purple)">tangible.</span>
-          </h1>
+          <span class="tag">Selected capabilities</span>
+          <h1>Ideas made tangible.</h1>
           <p>
             A sample portfolio layout to showcase project stories, digital
             products and creative work. Add verified company projects before
@@ -82,53 +83,67 @@
             <button class="filter-btn active" data-filter="all">
               All projects</button
             ><button class="filter-btn" data-filter="web">Web</button
-            ><button class="filter-btn" data-filter="ai">AI & Technology</button
+            ><button class="filter-btn" data-filter="ai">
+              AI &amp; Technology</button
             ><button class="filter-btn" data-filter="design">Design</button>
           </div>
-          <div class="cards">
-            <article class="card project-card" data-category="web">
-              <div class="project-image">WEB</div>
-              <div class="card-body">
-                <span class="tag">Web Development</span>
-                <h3>Digital Business Experience</h3>
-                <p>
-                  A clean digital presence focused on clear messaging, usability
-                  and responsive design.
-                </p>
-              </div>
+          <div class="grid g3">
+            <article class="card" data-category="web">
+              <div class="project-img">WEB</div>
+              <span class="tag" style="align-self: flex-start"
+                >Web Development</span
+              >
+              <h3>Digital Business Experience</h3>
+              <p>
+                A clean digital presence focused on clear messaging, usability
+                and responsive design.
+              </p>
             </article>
-            <article class="card project-card" data-category="ai">
+            <article class="card" data-category="ai">
               <div
-                class="project-image"
+                class="project-img"
                 style="background: linear-gradient(145deg, #6650b7, #a58ae9)"
               >
                 AI
               </div>
-              <div class="card-body">
-                <span class="tag">AI Solutions</span>
-                <h3>Intelligent Workflow Concept</h3>
-                <p>
-                  A concept for simplifying repetitive tasks and supporting
-                  faster decisions.
-                </p>
-              </div>
+              <span class="tag" style="align-self: flex-start"
+                >AI Solutions</span
+              >
+              <h3>Intelligent Workflow Concept</h3>
+              <p>
+                A concept for simplifying repetitive tasks and supporting faster
+                decisions.
+              </p>
             </article>
-            <article class="card project-card" data-category="design">
+            <article class="card" data-category="design">
               <div
-                class="project-image"
+                class="project-img"
                 style="background: linear-gradient(145deg, #39468f, #7a88dc)"
               >
                 DESIGN
               </div>
-              <div class="card-body">
-                <span class="tag">Creative Design</span>
-                <h3>Brand Identity System</h3>
-                <p>
-                  A visual direction designed to create consistency across
-                  digital touchpoints.
-                </p>
-              </div>
+              <span class="tag" style="align-self: flex-start"
+                >Creative Design</span
+              >
+              <h3>Brand Identity System</h3>
+              <p>
+                A visual direction designed to create consistency across digital
+                touchpoints.
+              </p>
             </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="cta-band">
+            <div>
+              <h2>Want to see your project here?</h2>
+              <p>Let's build something worth showcasing together.</p>
+            </div>
+            <a class="btn primary" href="contact.html"
+              >Start a Project <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </section>
@@ -146,12 +161,13 @@
             </p>
           </div>
           <div>
-            <h4>Explore</h4>
+            <h4>Company</h4>
             <div class="footer-links">
               <a href="about.html">About Us</a
               ><a href="service.html">Our Services</a
               ><a href="portfolio.html">Portfolio</a
-              ><a href="blog.html">Insights & Blog</a>
+              ><a href="blog.html">Insights &amp; Blog</a
+              ><a href="contact.html">Contact Us</a>
             </div>
           </div>
           <div>
@@ -162,15 +178,20 @@
               ><a href="service/ai-solutions.html">AI Solutions</a
               ><a href="service/blockchain-development.html"
                 >Blockchain Development</a
-              >
+              ><a href="service/ui-ux-design.html">UI/UX Design</a
+              ><a href="service/digital-marketing.html">Digital Marketing</a>
             </div>
           </div>
           <div>
-            <h4>Let's connect</h4>
+            <h4>Contact</h4>
             <div class="footer-links">
-              <a href="contact.html">Contact Us</a
-              ><a href="contact.html">Request a Proposal</a
-              ><a href="contact.html">Start a Project</a>
+              <a href="tel:+919782858382"
+                ><i class="fa-solid fa-phone"></i>+91 97828 58382</a
+              ><a href="mailto:Techvedasoftware@gmail.com"
+                ><i class="fa-solid fa-envelope"></i>Techvedasoftware@gmail.com</a
+              ><span
+                ><i class="fa-solid fa-location-dot"></i>Jaipur, India</span
+              >
             </div>
           </div>
         </div>
@@ -182,6 +203,12 @@
         </div>
       </div>
     </footer>
+    <a
+      class="wa"
+      href="https://wa.me/916375777464"
+      aria-label="Chat on WhatsApp"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
     <script src="js/script.js"></script>
   </body>
 </html>
