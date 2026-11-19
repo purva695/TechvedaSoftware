@@ -1336,3 +1336,165 @@ textarea:focus {
     line-height: 1.6;
   }
 }
+/* Service pages: split hero layout */
+.service-detail-hero .service-hero-grid {
+    display: grid;
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: 46px;
+    align-items: center;
+}
+
+.service-detail-hero h1 {
+    max-width: 750px;
+}
+
+.service-detail-hero .service-lead {
+    max-width: 700px;
+}
+
+.service-hero-image {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+}
+
+.service-hero-image img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 24px;
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+/* Service-specific choice sections */
+.service-choice-section {
+    background: #fff;
+}
+
+.service-choice-section:nth-of-type(even) {
+    background: #f6f8fc;
+}
+
+.choice-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.choice-card {
+    position: relative;
+    overflow: hidden;
+    padding: 28px 26px 30px;
+    background: #f8faff;
+    border: 1px solid #e2eaf7;
+    border-radius: 20px;
+    min-height: 235px;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.choice-card:after {
+    content: "";
+    position: absolute;
+    right: -34px;
+    bottom: -54px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        rgba(91, 134, 215, 0.10),
+        rgba(126, 87, 194, 0.08)
+    );
+    pointer-events: none;
+}
+
+.choice-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 34px rgba(17, 48, 96, 0.10);
+    border-color: #b7c9eb;
+}
+
+.choice-card h3 {
+    font-size: 1.16rem;
+    margin: 0 0 11px;
+    line-height: 1.35;
+    color: #122544;
+}
+
+.choice-card p {
+    font-size: 0.95rem;
+    line-height: 1.78;
+    color: #5f6f86;
+    max-width: 46ch;
+}
+/* Gradient icon styling */
+.choice-icon,
+.service-feature-icon {
+    display: grid;
+    place-items: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    color: #285aab;
+    background: linear-gradient(145deg, #e9f1ff, #f2edff);
+    border: 1px solid #dbe6fb;
+    font-size: 1.25rem;
+    box-shadow: 0 6px 16px rgba(48, 87, 153, 0.08);
+}
+
+/* Capability cards */
+.detail-card {
+    position: relative;
+    padding: 27px 25px 28px;
+    border-radius: 18px;
+}
+
+.service-feature-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+    font-size: 1.05rem;
+}
+
+.detail-card h3 {
+    line-height: 1.4;
+}
+/* Tablet */
+@media (max-width: 900px) {
+    .service-detail-hero .service-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .service-hero-image img {
+        height: 340px;
+    }
+
+    .choice-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .choice-card {
+        min-height: 220px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .service-hero-image img {
+        height: 250px;
+    }
+
+    .choice-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .choice-card {
+        min-height: unset;
+        padding: 24px;
+    }
+}
